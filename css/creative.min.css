@@ -18,7 +18,7 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
+    color: #3ABEA8;
     -webkit-transition: all .2s;
     -moz-transition: all .2s;
     transition: all .2s
@@ -49,7 +49,8 @@ section {
 }
 
 .section-heading {
-    margin-top: 0
+    margin-top: 0;
+    font-size: 40px;
 }
 
 ::-moz-selection {
@@ -140,7 +141,7 @@ img::-moz-selection {
 
     #mainNav.navbar-shrink {
         border-bottom: 1px solid rgba(33, 37, 41, .1);
-        background-color: #fff
+        background-color: whitesmoke;
     }
 
     #mainNav.navbar-shrink .navbar-brand {
@@ -242,9 +243,15 @@ header.masthead p {
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
     color: #fff;
-    background-color: #ee4b28 !important
+    background-color: #3ABEA8 !important
 }
 
 .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 .2rem rgba(240, 95, 64, .5) !important
+}
+
+.headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
