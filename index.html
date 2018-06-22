@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Make color slashed slide in with an animation. Flyers rotating -->
+
   <head>
 
     <meta charset="utf-8">
@@ -21,6 +23,9 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
+
+    <!-- Used for animations -->
+    <link rel="stylesheet" href="animate.min.css">
 
   </head>
 
@@ -64,40 +69,61 @@
       </div>
     </header>
 
-    <section class="bg-primary" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto text-left">
-            <h2 class="section-heading " style="color: #3ABEA8">out with the old, in with the new</h2>
-              <ul style="list-style-type:none; padding:0;">
+    <!-- File upload code:
+    <input type="file" name="file" onchange="angular.element(this).scope().uploadFile(this.files)"/>
+    -->
+
+    <section class="bg-primary" id="about" style="padding: 0px">
+      <!--<div class="container">-->
+        <div class="row about-row-1">
+          <div class="about-row-1-left col-lg-6 col-xs-12 mx-auto text-left center-items">
+            <span class="align-middle">
+              <h2 class="section-heading " style="color: #FFCE00;">out with the old, in with the new</h2>
+              <ul style="list-style-type:none; padding:0; font-size: 20px">
                 <li>no cluttered mess of cork boards</li>
                 <li>no more hours lost walking around posting flyers up</li>
                 <li>wasting paper is a thing of the past</li>
               </ul>
+            </span>
+          </div>
+          <div class="about-row-1-right col-lg-5 col-lg-offset-1 col-xs-12">
+            <div class="about-row-1-background-div"><img class="about-row-1-background" src="./img/about-1-background.svg"></div>
+            <div class="newboard-div"><img class="newboard" src="./img/new-board.svg"></div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12 mx-auto text-right">
-            <h2 class="section-heading " style="color: #FFBA00">digital boards, digital content</h2>
-            <ul style="list-style-type:none; padding:0;">
-              <li>brighten your flyers with animations</li>
-              <li>draw more attention with embedded slideshows and gifs</li>
-              <li>smarti animations to triple a boards live space</li>
-            </ul>
+        <div class="row about-row-2">
+          <div class="col-lg-6">
+            <img class="animated-flyer" src="https://im4.ezgif.com/tmp/ezgif-4-67b925be70.gif" >
+          </div>
+          <div class="col-lg-6 mx-auto center-items">
+            <span class="align-middle">
+              <h2 class="section-heading " style="color: #1B9CFC;">digital boards, digital content</h2>
+              <ul style="list-style-type:none; padding:0; font-size: 20px">
+                <li>brighten your flyers with animations</li>
+                <li>draw more attention with embedded slideshows and gifs</li>
+                <li>smarti animations to triple a boards live space</li>
+              </ul>
+            </span>
+            <!-- flyer URL: https://im4.ezgif.com/tmp/ezgif-4-67b925be70.gif -->
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12 mx-auto text-left">
-            <h2 class="section-heading " style="color: #3ABEA8">all from your computer</h2>
-            <ul style="list-style-type:none; padding:0;">
-              <li>1. design a flyer</li>
-              <li>2. select the boards you want to post it to</li>
-              <li>3. upload</li>
-            </ul>
-            <p>it's Simple! You can also edit your flyer whenever, and expired flyers automatically delete themselves</p>
+        <div class="row about-row-3">
+          <div class="col-lg-6 mx-auto text-left center-items">
+            <span class="align-middle">
+              <h2 class="section-heading " style="color: #FFCE00">all from your computer</h2>
+              <ul style="list-style-type:none; padding:0; font-size: 20px">
+                <li>1. design a flyer</li>
+                <li>2. select the boards you want to post it to</li>
+                <li>3. upload</li>
+              </ul>
+              <p>it's simple! You can also edit your flyer whenever, and expired flyers automatically delete themselves.</p>
+            </span>
+          </div>
+          <div class="col-lg-5 col-lg-offset-1">
+            <img src="./img/laptop.svg" style="width: 280px; height: 280px">
           </div>
         </div>
-      </div>
+      <!--</div>-->
     </section>
 
     <section id="the-team">
@@ -114,37 +140,37 @@
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-              <img class="headshot" src="./img/headshots/kyle.png">
+              <img class="headshot" src="./img/headshots/kyle.jpg">
               <br><br>
               <h3 class="mb-3">Kyle Hornick</h3>
-              <p class="text-muted mb-0">Business operations</p>
+              <p class="text-muted mb-0">Business operations. Absolute animal.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
-              <img class="headshot" src="./img/headshots/grant.png">
+              <img class="headshot" src="./img/headshots/grant.jpg">
               <br><br>
               <h3 class="mb-3">Grant Kochmann</h3>
-              <p class="text-muted mb-0">Front end software engineer</p>
+              <p class="text-muted mb-0">Front end software engineer. Second tallest person on the team. Newly single.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
-              <img class="headshot" src="./img/headshots/max.png">
+              <img class="headshot" src="./img/headshots/max.jpg">
               <br><br>
               <h3 class="mb-3">Max Evans</h3>
-              <p class="text-muted mb-0">Front end software engineer</p>
+              <p class="text-muted mb-0">Front end software engineer. Design genius. Believes math is everything </p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-              <img class="headshot" src="./img/headshots/evan.png">
+              <img class="headshot" src="./img/headshots/evan.jpg">
               <br><br>
               <h3 class="mb-3">Evan Reierson</h3>
-              <p class="text-muted mb-0">Back end software engineer</p>
+              <p class="text-muted mb-0">Back end software engineer. Working on creating fastest database this side of the Mississippi. </p>
             </div>
           </div>
         </div>
@@ -168,7 +194,7 @@
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
             <h4>
-              <a href="mailto:your-email@your-domain.com">splashboardteam@gmail.com</a>
+              <a href="mailto:splashboardteam@gmail.com">splashboardteam@gmail.com</a>
             </h4>
           </div>
         </div>
