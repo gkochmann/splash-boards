@@ -19,7 +19,7 @@ function setup() {
     video.loop = true;
     video.autoplay = true;
     video.muted = true;
-    video.src = "Images/testVideo2.mp4";
+    video.src = "img/testVideo2.mp4";
     var videoTexture = PIXI.Texture.fromVideo(video);
 
     // create a new Sprite using the video texture
