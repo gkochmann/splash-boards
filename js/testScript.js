@@ -8,7 +8,8 @@ var renderer = PIXI.autoDetectRenderer(window.innerWidth, window.innerHeight, { 
 document.body.appendChild(renderer.view);
 
 var stage = new PIXI.Container();
-PIXI.loader.load(setup);
+PIXI.loader.add("flyer1", "img/flyerexample1.gif")
+           .load(setup);
 
 function setup() {
     var list = [];
@@ -54,9 +55,17 @@ function setup() {
     list[0].height = 100;
     list[0].x = 300;
     list[0].y = 300;
-
     stage.addChild(list[0]);
 
+    // flyer 1
+    flyer = new PIXI.Sprite(
+        PIXI.loader.resources["flyer1"].texture
+    );
+    flyer.scale.set(0.25, 0.25);
+    flyer.x = 50;
+    flyer.y = 50;
+    stage.addChild(flyer);
+    
     animationLoop();
 }
 
