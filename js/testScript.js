@@ -23,33 +23,39 @@ function setup() {
     var videoTexture = PIXI.Texture.fromVideo(video);
 
     // create a new Sprite using the video texture
-    for (i = 0; i < 50; i++) {
+    // for (i = 0; i < 50; i++) {
         list.push(new PIXI.Sprite(videoTexture));
-    }
-    for (i = 0; i < 50; i++) { // set width & height
-        list[i].width = 100;
-        list[i].height = 100;
-    }
+    // }
+    // for (i = 0; i < 50; i++) { // set width & height
+    //     list[i].width = 100;
+    //     list[i].height = 100;
+    // }
 
-    var xPos = 0;
-    var yPos = 0;
-    for (i = 1; i < 50; i++) {
-        if (i % 10 != 0) {
-            xPos += 100;
-        } else {
-            yPos += 100;
-            xPos = 0;
-        }
-        list[i].x = xPos;
-        list[i].y = yPos;
-    }
+    // var xPos = 0;
+    // var yPos = 0;
+    // for (i = 1; i < 50; i++) {
+    //     if (i % 10 != 0) {
+    //         xPos += 100;
+    //     } else {
+    //         yPos += 100;
+    //         xPos = 0;
+    //     }
+    //     list[i].x = xPos;
+    //     list[i].y = yPos;
+    // }
     
     
-    // add to stage
-    for (i = 0; i < 50; i++) {
-        stage.addChild(list[i]);
-    }
+    // // add to stage
+    // for (i = 0; i < 50; i++) {
+    //     stage.addChild(list[i]);
+    // }
     //stage.addChild(videosList[0]);
+    list[0].width = 100;
+    list[0].height = 100;
+    list[0].x = 300;
+    list[0].y = 300;
+
+    stage.addChild(list[0]);
 
     animationLoop();
 }
